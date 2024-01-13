@@ -1,0 +1,534 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PRE-.#####",
+ "creation": "2023-10-22 18:30:14.661017",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "query",
+  "column_break_3",
+  "create_opportunity",
+  "column_break_5",
+  "create_application",
+  "column_break_10",
+  "landlords_insurance",
+  "column_break_12",
+  "buliding_and_contents_insurance",
+  "column_break_14",
+  "offer_deprecation_report",
+  "column_break_16",
+  "equifax_credit_report",
+  "column_break_18",
+  "total_cost_of_purchase_report",
+  "column_break_20",
+  "sent_to_afg_business",
+  "personal_details_section",
+  "mrmrs",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "preferred_name",
+  "spousepartner",
+  "maritial_status",
+  "date_of_birth",
+  "column_break_50",
+  "gender",
+  "drivers_licence_number",
+  "job_title",
+  "occupation",
+  "type",
+  "self_employed",
+  "contract_details_section",
+  "street_address",
+  "city",
+  "post_code",
+  "state",
+  "country",
+  "verified_address",
+  "column_break_24",
+  "other_address_history",
+  "home_phone",
+  "work_phone",
+  "mobile_phone",
+  "column_break_28",
+  "home_fax",
+  "work_fax",
+  "email",
+  "email_status",
+  "communication_preferences_section",
+  "are_you_contract_for_your_household",
+  "dont_send_marketing_material",
+  "do_not_call",
+  "do_not_send_mail",
+  "do_not_send_email",
+  "do_not_offer_life_ins",
+  "column_break_40",
+  "preferred_contract_method",
+  "best_time_to_call",
+  "smart_preferences_section",
+  "do_not_send_smart_communications",
+  "include_in_commercial_procedure_e_campaign",
+  "include_in_smart_haven_campaign",
+  "contract_development_section",
+  "source",
+  "campaign",
+  "column_break_46",
+  "channel",
+  "outcome",
+  "custom_fields_section",
+  "custom_1",
+  "custom_2",
+  "other_section",
+  "status",
+  "contrac_id",
+  "aboriginal_or_torres_strait_islander",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "street_address",
+   "fieldtype": "Data",
+   "label": "Street Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Autocomplete",
+   "label": "City"
+  },
+  {
+   "fieldname": "post_code",
+   "fieldtype": "Data",
+   "label": "Post Code"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "columns": 4,
+   "fieldname": "mrmrs",
+   "fieldtype": "Autocomplete",
+   "label": "Mr/Mrs",
+   "options": "Mr\nMrs"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Autocomplete",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "preferred_name",
+   "fieldtype": "Data",
+   "label": "Preferred Name"
+  },
+  {
+   "fieldname": "spousepartner",
+   "fieldtype": "Data",
+   "label": "Spouse/Partner"
+  },
+  {
+   "default": "Married",
+   "fieldname": "maritial_status",
+   "fieldtype": "Select",
+   "label": "Maritial Status",
+   "options": "Divorced\nMarried\nSingle\nScparatcd\nWidowed\nOthers"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "drivers_licence_number",
+   "fieldtype": "Data",
+   "label": "Driver's Licence Number"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Select",
+   "label": "Occupation",
+   "options": "Accountant\nAccounts Clark\nAdmin Assistant / Clark /mangr\nAdvertising\nAgent-Entertainment\nSystem Admin\nSystem Administrator"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "student\ncustomer\nEmployee"
+  },
+  {
+   "fieldname": "self_employed",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "label": "Self Employed",
+   "options": "Y\nN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Details"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "home_phone",
+   "fieldtype": "Phone",
+   "label": "Home Phone"
+  },
+  {
+   "fieldname": "work_phone",
+   "fieldtype": "Phone",
+   "label": "Work Phone"
+  },
+  {
+   "fieldname": "mobile_phone",
+   "fieldtype": "Phone",
+   "label": "Mobile Phone"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "home_fax",
+   "fieldtype": "Data",
+   "label": "Home Fax"
+  },
+  {
+   "fieldname": "work_fax",
+   "fieldtype": "Data",
+   "label": "Work Fax"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "email_status",
+   "fieldtype": "Select",
+   "label": "Email Status",
+   "options": "Active\nBounced\nInvalid Email\nUnsubscribe"
+  },
+  {
+   "fieldname": "communication_preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Communication Preferences"
+  },
+  {
+   "default": "0",
+   "fieldname": "are_you_contract_for_your_household",
+   "fieldtype": "Check",
+   "label": "Are You contract for your household?"
+  },
+  {
+   "default": "0",
+   "fieldname": "dont_send_marketing_material",
+   "fieldtype": "Check",
+   "label": "Don't Send marketing material"
+  },
+  {
+   "default": "0",
+   "fieldname": "do_not_call",
+   "fieldtype": "Check",
+   "label": "Do not call"
+  },
+  {
+   "default": "0",
+   "fieldname": "do_not_send_mail",
+   "fieldtype": "Check",
+   "label": "Do not send mail"
+  },
+  {
+   "default": "0",
+   "fieldname": "do_not_send_email",
+   "fieldtype": "Check",
+   "label": "Do not send email"
+  },
+  {
+   "default": "0",
+   "fieldname": "do_not_offer_life_ins",
+   "fieldtype": "Check",
+   "label": "Do not offer life Ins"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "preferred_contract_method",
+   "fieldtype": "Select",
+   "label": "Preferred Contract Method",
+   "options": "Home Phone\nMobile Phone\nWork Phone\nEmail\nFax\nChat\nSMS\nMail"
+  },
+  {
+   "fieldname": "best_time_to_call",
+   "fieldtype": "Autocomplete",
+   "label": "Best Time to Call",
+   "options": "10AM-12PM\n3PM-6PM"
+  },
+  {
+   "fieldname": "contract_development_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Development"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Accounting firm\nBroker Associates\nReferral Partners\nPersonal\nCustomer Referral"
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Select",
+   "label": "Campaign",
+   "options": "Facebook\nWebsite\nWord of Mouth\nGoogle SOE\nNewspaper Add"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "channel",
+   "fieldtype": "Autocomplete",
+   "label": "Channel",
+   "options": "Phone\nWeb\nMail\nCall Center\nIn Person\nEmail"
+  },
+  {
+   "fieldname": "outcome",
+   "fieldtype": "Autocomplete",
+   "label": "Outcome"
+  },
+  {
+   "fieldname": "other_section",
+   "fieldtype": "Section Break",
+   "label": "Other"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contrac_id",
+   "fieldtype": "Data",
+   "label": "Contrac ID"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Users of FLEX",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "custom_fields_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Fields"
+  },
+  {
+   "fieldname": "custom_1",
+   "fieldtype": "Select",
+   "label": "Custom 1"
+  },
+  {
+   "fieldname": "custom_2",
+   "fieldtype": "Select",
+   "label": "Custom 2"
+  },
+  {
+   "fieldname": "smart_preferences_section",
+   "fieldtype": "Section Break",
+   "label": "SMART Preferences"
+  },
+  {
+   "default": "0",
+   "fieldname": "do_not_send_smart_communications",
+   "fieldtype": "Check",
+   "label": "Do not send SMART communications"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_in_commercial_procedure_e_campaign",
+   "fieldtype": "Check",
+   "label": "Include in Commercial procedure E campaign"
+  },
+  {
+   "fieldname": "include_in_smart_haven_campaign",
+   "fieldtype": "Select",
+   "label": "Include in SMART Haven campaign",
+   "options": "Email"
+  },
+  {
+   "fieldname": "aboriginal_or_torres_strait_islander",
+   "fieldtype": "Select",
+   "label": "Aboriginal or Torres Strait Islander"
+  },
+  {
+   "fieldname": "other_address_history",
+   "fieldtype": "Data",
+   "label": "Other Address History"
+  },
+  {
+   "default": "0",
+   "fieldname": "verified_address",
+   "fieldtype": "Check",
+   "label": "Verified Address"
+  },
+  {
+   "fieldname": "equifax_credit_report",
+   "fieldtype": "Button",
+   "label": "Equifax Credit Report"
+  },
+  {
+   "fieldname": "query",
+   "fieldtype": "Button",
+   "label": "Query"
+  },
+  {
+   "fieldname": "create_opportunity",
+   "fieldtype": "Button",
+   "label": "Create opportunity"
+  },
+  {
+   "fieldname": "create_application",
+   "fieldtype": "Button",
+   "label": "Create Application"
+  },
+  {
+   "fieldname": "landlords_insurance",
+   "fieldtype": "Button",
+   "label": "Landlords Insurance"
+  },
+  {
+   "fieldname": "buliding_and_contents_insurance",
+   "fieldtype": "Button",
+   "label": "Buliding and Contents Insurance"
+  },
+  {
+   "fieldname": "offer_deprecation_report",
+   "fieldtype": "Button",
+   "label": "Offer Deprecation Report"
+  },
+  {
+   "fieldname": "total_cost_of_purchase_report",
+   "fieldtype": "Button",
+   "label": "Total Cost of Purchase Report"
+  },
+  {
+   "fieldname": "sent_to_afg_business",
+   "fieldtype": "Button",
+   "label": "Sent To AFG Business"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-26 18:07:55.011860",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "Users of FLEX",
+ "name_case": "Title Case",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
